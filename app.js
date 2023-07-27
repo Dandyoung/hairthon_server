@@ -8,7 +8,6 @@ const nunjucks = require('nunjucks');
 var indexRouter = require('./routes/index');
 
 // test 라우터 설정 
-var testRouter = require('./routes/aaa')
 // var usersRouter = require('./routes/users');
 
 var app = express();
@@ -32,8 +31,6 @@ app.use('/', indexRouter);
 
 
 // test 라우터 설정
-app.use('/aaa', testRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -42,14 +39,14 @@ app.use(function(req, res, next) {
 
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+// app.use(function(err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render('error');
+// });
 
 module.exports = app;

@@ -15,3 +15,9 @@
 ```bash
   npm i cookie-parser
 ```
+
+
+### json 데이터를 주고 받기 위한 모듈 설치
+~~~bash
+ yarn add axios
+~~~

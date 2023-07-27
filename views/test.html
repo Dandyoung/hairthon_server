@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Data Display</title>
+</head>
+<body>
+  <div id="message"></div>
+
+  <script>
+    // Express 서버에서 JSON 데이터 가져오기
+    fetch('http://localhost:3000/')
+      .then(response => response.json())
+      .then(data => {
+        // JSON 데이터를 HTML에 띄우기
+        document.getElementById('message').innerText = data.message;
+      })
+      .catch(error => {
+        console.error('Error fetching data from Express server:', error);
+      });
+  </script>
+</body>
+</html>

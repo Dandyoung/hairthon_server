@@ -4,14 +4,25 @@
 
 
 ### ⌨️ 명령어 : 로컬에서 실행할 때 
-### http://localhost:3000/ 으로 세팅해놨다~
+### js 서버는 http://localhost:3000/ 으로 세팅
+### flask 서버는 port 5000으로 세팅
 
 ```bash
   npm start
 ```
+### 다른 터미널창 열어서
+~~~py
+flask run
+~~~
 
 ### 혹시나 실행 안되면, package.json -> dependencies -> cookie-parser 있는지 체크해보고 없으면 install해주면 된다~
 
 ```bash
   npm i cookie-parser
 ```
+
+
+### json 데이터를 주고 받기 위한 모듈 설치
+~~~bash
+ yarn add axios
+~~~

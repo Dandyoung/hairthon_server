@@ -6,6 +6,9 @@ canvas.height = CANVAS_SIZE;
 context.lineWidth = 30;
 context.strokeStyle = "#FFFFFF";
 var painting = false;
+var express = require('express');
+const axios = require('axios');
+var router = express.Router();
 
 // mouse 이벤트 리스너 등록
 function onMouseMove(event){

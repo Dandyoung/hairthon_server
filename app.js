@@ -8,7 +8,7 @@ const nunjucks = require('nunjucks');
 // ------------------------------------------------
 
 // 라우터 설정
-var indexRouter = require('./routes/index');
+var bottonRouter = require('./routes/index');
 // var usersRouter = require('./routes/users');
 
 // ------------------------------------------------
@@ -33,7 +33,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // 설정한 라우터 사용 
-app.use('/', indexRouter);
+//app.use('/', indexRouter);
+app.use('/', bottonRouter)
 
 
 module.exports = app;

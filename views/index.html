@@ -1,48 +1,26 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나와 가장 어울리는머리를 찾아보세요~!</title>
     <!-- 내가만든 css 적용 -->
     <link rel="stylesheet" href="./stylesheets/startPage.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" /> -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="css/etc.css">
+    <link rel="stylesheet" href="css/canvas.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>결과 테스트</title>
 </head>
 <body>
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <!-- <<img src="/images/node.png" class="w-36 rounded-lg md:ml-5 lg:ml-5" /> -->
-          <div>
-            <h1 class="text-5xl font-bold">나랑 어울리는 머리는?</h1>
-            <p class="py-6">   </p>
-            <div class="btn" onclick = "goToPage()" >
-              <span>&#10148 얼굴형 찾기</span>
-              <div class="dot"></div>
-            </div>
-        
-            <script>
-              function goToPage() {
-                window.location.href = "./aaa";
-              }
-            </script>
-
-                <h1 class="text-5xl font-bold">어울리는 머리를 찾았다면?</h1>
-                <p class="py-6">   </p>
-                <div class="btn" onclick = "goToPage()" >
-                  <span>&#10148 얼굴합성하기</span>
-                  <div class="dot"></div>
-                </div>
-            
-            <script>
-                  function goToPage() {
-                    window.location.href = "./aaa";
-                  }
-            </script>
-          </div>
+    <div class="container">
+        <canvas></canvas>
+        <div class="btn-container">
+            <button id="reset">지우기</button>
+            <button id="send">결과 확인</button>
         </div>
-      </div>
+        <div class="text">예측한 번호는</div>
+        <div id="answer">?</div>
+    </div>
+    <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
 </body>
 </html>

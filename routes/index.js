@@ -6,7 +6,7 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next){
-  res.render('test.html')
+  res.send({message:'hello'});
 });
 
 

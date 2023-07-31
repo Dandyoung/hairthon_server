@@ -26,3 +26,8 @@ flask run
 ~~~bash
  yarn add axios
 ~~~
+
+### 서버 분리를 위해서 cors 설치
+~~~bash
+npm install cors
+~~~
